@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+div{
+    width: 100px;
+    height: 100px;
+        background:#ccc;
+        border-radius:50%;
+        box-shadow:0 0 10px 20px transparent;
+        transition-property:box-shadow;
+        transition-duration:.5s;
+        transition-timing-function:linear;
+}
+div:hover{
+    box-shadow: 0 0 0px 0px red;
+    transition-property:box-shadow;
+    transition-duration:.5s;
+    transition-timing-function:linear;
+
+}
+
+
+
+p{
+    font-size:2rem;
+    text-shadow:0 0 5px transparent;
+    transition-property:text-shadow;
+    transition-duration:1s;
+    transition-timing-function:linear;
+}
+p:hover{
+    text-shadow:0 0 5px green;
+    transition-property:text-shadow;
+    transition-duration:.1s;
+    transition-timing-function:linear;
+
+}
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>transition 和 animation 的复合写法写10遍1次对的，而且有些值不明确，所以对于Bill来说还是分开写好了</p>
+</body>
+</html>

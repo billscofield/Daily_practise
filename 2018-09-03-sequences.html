@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+div{
+    width: 100px;
+    background:red;
+    text-align:center;
+    border-radius:4px;
+    animation:go 3s linear Infinite;
+        animation-fill-mode:forwards;
+}
+span {
+    line-height:30px;
+}
+@keyframes go{
+    0%{
+        transform:translateX(0px) rotateZ(0deg) ;
+        background:red;
+            color:green;
+    }
+    80%{
+        transform:translateX(500px) rotateZ(30deg) ;
+            background:skyblue;
+                color:green;
+    }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <span>CSS3 动画</span>
+    </div>
+</body>
+</html>

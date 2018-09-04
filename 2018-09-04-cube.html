@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cube</title>
+    <style>
+@keyframes go{
+    0%{
+        transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+html,body{
+    font-size:20px;
+}
+div.cube{
+    width:5rem;
+    height: 5rem;
+    position:relative;
+    perspective:2000px;
+    margin:5rem auto 100px;
+}
+div.cube ul{
+    margin:0;
+    padding: 0;
+    list-style:none;
+    position:relative;
+    transform-origin:2.5rem 2.5rem -2.5rem;
+    transform-style:preserve-3d;
+    animation:go 15s linear Infinite;
+}
+div.cube li{
+    display:block;
+    position:absolute;
+    width:5rem;
+    line-height:5rem;
+    font-size:1.5rem;
+    backface-visibility:visible;
+    text-align:center;
+    outline:1px solid green;
+}
+/*front-end*/
+div.cube li:nth-of-type(1){
+    background:#aa111111;
+}
+/*left end*/
+div.cube li:nth-of-type(2){
+    left:-5rem;
+    transform-origin:right;
+    transform:rotateY(-90deg);
+    background:#11aa1111;
+}
+
+/*right end*/
+div.cube li:nth-of-type(3){
+    left:5rem;
+    transform-origin:left;
+    transform:rotateY(90deg);
+    background:#ff0000aa;
+}
+/* top end */
+div.cube li:nth-of-type(4){
+    top:-5rem;
+    transform-origin:bottom;
+    transform:rotateX(90deg);
+    background:#00ff00aa;
+}
+/* bottom end */
+div.cube li:nth-of-type(5){
+    top:5rem;
+    transform-origin:top;
+    transform:rotateX(-90deg);
+    background:#0000ffaa;
+}
+/* back end */
+div.cube li:nth-of-type(6){
+    transform:translateZ(-5rem) rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class='cube'>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+        </ul>
+    </div>
+</body>
+</html>

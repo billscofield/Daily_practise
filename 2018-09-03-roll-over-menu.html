@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+html,body{
+    font-size:20px;
+}
+nav{
+    
+}
+
+ul{
+    width:1000px;
+        margin:0 auto;
+    list-style:none;
+    padding:0;
+    background:#ccc;
+    height:2rem;
+        font-size:0;
+}
+li{
+    perspective:6000px;
+    display:inline-block;
+        height:2rem;
+}
+a{
+    text-decoration:none;
+    display:inline-block;
+    transition:.4s;
+    transform-style:preserve-3d;
+    height:2rem;
+        text-align:center;
+}
+a:hover{
+    transform:rotateX(90deg);
+}
+p{
+    font-size:1rem;
+    line-height:2rem;
+    margin:0;
+    padding:0 10px;;
+}
+p:first-child{
+    background:green;
+    transform:translateZ(1rem);
+    color:#fff;
+}
+p:last-child{
+    background:blue;
+        color:#fff;
+    transform:translateY(-1rem) rotateX(-91deg);
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <p>HOME</p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <p>HOME</p>
+                    <p>首页</p>
+                </a>
+            </li>
+        </ul>
+    </nav>    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title></title>
+    <style>
+html,body{
+    font-size:20px;
+}
+nav{
+    background:#ccc;
+    font-family:Helvetica;
+}
+nav ul{
+    list-style:none;
+    padding: 0;
+    width:1000px;
+    margin:0 auto;
+    font-size:0;
+    height:2rem;
+}
+nav li{
+    display:inline-block;
+    height:2rem;
+    perspective:1000px;
+}
+nav li:not(:last-child){
+    margin-right:.5rem;
+}
+nav a{
+    display:block;
+    height:2rem;
+    transform-style:preserve-3d;
+    transition:.4s;
+    text-decoration:none;
+}
+nav a:hover{
+    transform:rotateX(90deg);
+}
+nav p{
+    margin: 0;
+    padding: 0;
+    line-height:2rem;
+    font-size:1rem;
+    padding:0 10px;
+    text-align:center;
+}
+nav p:first-child{
+    transform:translateZ(1rem);
+    background:orange;
+}
+nav p:last-child{
+    transform:translateY(-1rem) rotateX(-90deg);
+    background:skyblue;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <p>Responsitility</p>
+                    <p>责任</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Sacrifice</p>
+                    <p>付出</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Courage</p>
+                    <p>勇气</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Courage</p>
+                    <p>勇气</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

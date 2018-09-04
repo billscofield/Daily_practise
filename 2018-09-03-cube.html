@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+@keyframes goover{
+    0%{
+        transform:rotateX(0deg) rotateY(0deg) rotateZ(deg);
+    }
+    100%{
+        transform:rotateX(360deg) rotateY(360deg) rotateZ(30deg);
+    }
+}
+
+
+div.wrap{
+    perspective:3000px;
+}
+div.inner{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    margin:100px auto 100px;
+    transform-origin:50px 50px -50px;
+    transform-style:preserve-3d;
+    animation-name:goover;
+    animation-duration:6s;
+        //animation-timing-function:linear;
+    animation-timing-function:steps(50,end);
+    animation-iteration-count:Infinite;
+    backface-visibility:visible;
+}
+ul{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+li{
+    font-size: 50px;
+    line-height:100px;
+    text-align:center;
+        //background:#cccccc;
+    width:100px;
+    height:100px;
+    position:absolute;
+    backface-visibility:visible;
+    outline:1px solid green;
+}
+li:nth-of-type(1){
+    left:-100px;
+    transform-origin:right;
+    transform:rotateY(-90deg);
+    background:#00ff00cc;
+}
+li:nth-of-type(2){
+    left:100px;
+    transform-origin:left;
+    transform:rotateY(90deg);
+    background:#00ff00cc;
+}
+li:nth-of-type(3){
+    top:-100px;
+    transform-origin:bottom;
+    transform:rotateX(90deg);
+    background:#ff00ffcc;
+}
+li:nth-of-type(4){
+    top:100px;
+    transform-origin:top;
+    transform:rotateX(-90deg);
+    background:#ff0000cc;
+}
+li:nth-of-type(5){
+    transform:translateZ(-100px) rotateX(180deg);
+    background:#ff0000cc;
+}
+
+    </style>
+</head>
+<body>
+    <div class='wrap'>
+        <div class='inner'>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+div{
+    font-size:0;
+    width:128px;
+    position:relative;
+    transform-style:preserve-3d;
+    perspective:1000px;
+    transition:all 1s;
+}
+img{
+    width:128px;
+    backface-visibility:hidden;
+    position:absolute;
+    border:1px solid green;
+}
+img:nth-of-type(2){
+    transform:rotateY(180deg);
+}
+
+div:hover{
+    transform:rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://s1.ax1x.com/2018/09/03/Pz2QJI.png" alt="tiger">
+        <img src="https://s1.ax1x.com/2018/09/03/Pz23SP.png" alt="panda">
+    </div>
+</body>
+</html>
