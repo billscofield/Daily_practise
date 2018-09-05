@@ -1,0 +1,28 @@
+aside{
+    width:100%;
+}
+main{
+    box-sizing:border-box;
+    width:100%;
+    margin:0;
+    float:none;
+    padding:10px;
+    display:inline-block;
+}
+.article-list{
+    box-sizing:border-box;
+    width:100%;
+    margin-top:0px;
+}
+label{
+    display:block;
+}
+div.nav{
+    display:none;
+    text-align:center;
+}
+input:checked ~ div.nav{
+    display:block;
+    transition:all 1s linear;
+}
+

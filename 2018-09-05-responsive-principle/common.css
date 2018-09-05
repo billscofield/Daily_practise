@@ -1,0 +1,88 @@
+body{
+    background:#454545;
+}
+aside{
+    position:relative;
+    width:20%;
+    float:left;
+    background:#454545;
+}
+aside .header{
+    padding:10px 15px;
+    color:#fff;
+}
+aside .header a{
+    color:#fff;
+    border-width:5px;
+    border-style:solid;
+    padding:10px 20px;
+    font-size:30px;
+    display:inline-block;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+.header .intro{
+}
+.nav{
+    padding:10px 15px;
+}
+.nav a{
+    display:block;
+    padding:10px 15px;
+    text-decoration:none;
+    font-weight:700;
+    transition:all .4s linear 0;
+    color:#ccc;
+}
+.nav a:hover{
+    color:#fff;
+}
+main{
+    width:80%;
+    float:right;
+}
+
+
+.article-list{
+    margin-right:30%;
+    background:#fff;
+    padding:20px 30px;
+
+}
+.article-list .item{
+    margin-bottom:25px;
+}
+.article-list .item a{
+    text-decoration:none;
+    font-size:22px;
+    color:#333;
+}
+.article-list .status{
+    color:#ccc;
+    font-size:13px;
+        margin:20px 0;
+}
+
+input{
+    display:none;
+    transition:all 1s linear;
+}
+label{
+    display:none;
+    border-top-style:double;
+    border-top-width:9px;
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-color:#fff;
+    font-size:0px;
+    color:#fff;
+    float:right;
+    margin-top:5px;
+    margin-right:10px;
+    width:25px;
+    height:3px;
+}
+label:hover{
+    cursor:pointer;
+}
+
